@@ -35,8 +35,12 @@ primary:
 ```
 helm repo add bitnami https://charts.bitnami.com/bitnami
 
-helm install my-postgresql bitnami/postgresql --version 16.6.6
+helm install backstage-postgresql bitnami/postgresql --version 16.6.6  --namespace backstage --create-namespace  --values postgres/values.yaml
 ```
 
+To uninstall 
+```
+helm uninstall backstage-postgresql
+```
 ## Run Backstage
 
