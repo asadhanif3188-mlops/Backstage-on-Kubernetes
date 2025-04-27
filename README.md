@@ -44,3 +44,7 @@ helm uninstall backstage-postgresql
 ```
 ## Run Backstage
 
+Following manifest file can be used to deploy the backstage itself on k8s.
+
+```
+```
